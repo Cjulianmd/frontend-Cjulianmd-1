@@ -13,7 +13,7 @@ class back extends Component {
             Welcome back
          </TitleB>
          <TextB>
-            Sign in to an existing account using your phone numbe
+            Sign in to an existing account using your phone number
          </TextB>
          <form>
             <InputT placeholder="phone number" size="2em" />
