@@ -41,7 +41,7 @@ class back extends Component {
 
             }else{
                alert('ni escribir un usuario sabes que haces con tu vida? usuario o contraseña incorrectos')
-               //window.location.href="./Singin";
+               window.location.href="./Singin";
             }
          })
          .catch(error =>{
