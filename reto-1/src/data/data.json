@@ -1,6 +1,30 @@
 {
-    "usuarios": [
-        
-       
-    ]
+  "usuarios": [
+    {
+      "telefono": "310",
+      "nombre": "juan",
+      "email": "jjds@ads",
+      "password": "12345"
+    },
+    {
+      "telefono": "311",
+      "nombre": "julio",
+      "email": "jjds@ads",
+      "password": "1234"
+    },
+    {
+      "nombre": "julian",
+      "email": "dasasd@asdsas",
+      "telefono": "3104609852",
+      "password": "12345",
+      "id": "3"
+    },
+    {
+      "nombre": "julian",
+      "email": "adsdas@asd",
+      "telefono": "3104609852",
+      "password": "12345",
+      "id": "12345"
+    }
+  ]
 }

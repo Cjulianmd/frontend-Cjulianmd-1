@@ -25,7 +25,7 @@ class back extends Component {
       })
       
    }
-  
+   
    iniciarsesion = async () =>{console.log(this.state.form.telefono,this.state.form.password)
        await axios.get(baseUrl , {params: {telefono:this.state.form.telefono,password: this.state.form.password,}})
          
@@ -41,7 +41,7 @@ class back extends Component {
 
             }else{
                alert('ni escribir un usuario sabes que haces con tu vida? usuario o contraseña incorrectos')
-               //window.location.href="./Singin";
+               window.location.href="./Singin";
             }
          })
          .catch(error =>{
@@ -49,7 +49,7 @@ class back extends Component {
 
          })
    }
-//componentDidMount(){if(cookies.get('nombre')){window.location.href="./home";} }
+  // componentDidMount(){if(cookies.get('nombre')){window.location.href="./home";} }
   render() {
     return (
       <div>
