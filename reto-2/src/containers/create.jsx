@@ -1,44 +1,61 @@
 import React, { Component } from 'react'
 import { TextC, TitleC, InputT1, InputP1, Log, InputN, InputE} from '../style/StyleGlobal';
-import {NavLink} from 'react-router-dom'
 import Create from '../assets/img/create.svg';
 import Tap1 from '../components/NavBar'
 import axios from 'axios'
 
-const baseUrl = 'http://localhost:4008/usuarios';
+const baseUrl = 'http://localhost:40082/usuarios/';
 class create extends Component {
+
    state = {
       form: {
          nombre:'',
          email:'',
          telefono:'',
-         password:''
+         password:'',
+         id:''
       }
    }
+
+   registrer = () =>{
+     console.log("creaste una cuenta");
+     alert("creaste una cuenta")
+    
+      axios.post(baseUrl ,{
+         nombre:this.state.form.nombre,
+         email:this.state.form.email,
+         telefono:this.state.form.telefono,
+         password: this.state.form.password,
+         id: this.state.form.password ,
+      }
+         ) 
+        .catch(error =>{
+         if (error.response) {
+            console.log(error.response.data);
+            console.log(error.response.status);
+            console.log(error.response.headers);
+          } else if (error.request) {
+            console.log(error.request);
+          } else {
+            console.log('Error', error.message);
+          }
+          console.log(error.config);
+        });
+   window.location.href="./Singin"
+   }
+  
    handleChange  = async evt => {
       await this.setState({
          form: {
             ...this.state.form,
-            [evt.target.name]: evt.target.value
+            [evt.target.name]: evt.target.value,
+            
          }
-      })
-      
+      });console.log(this.state.form)
+       
    }
-   iniciarsesion = async () =>{console.log(this.state.form.telefono,this.state.form.password)
-      await axios.pushs(baseUrl , 
-         {params: {
-         nombre: this.state.form.nombre,
-         email: this.state.form.email,
-         telefono:this.state.form.telefono,
-         password: this.state.form.password,
-         
-            }})
-        
-        .catch(error =>{
-           console.log(error)
+   
 
-        })
-  }
   render() {
     return (
       <div>
@@ -58,12 +75,10 @@ class create extends Component {
             <InputN  name="nombre" placeholder="nombre" size="2em" onChange={this.handleChange} />
             <InputE name="email" placeholder="email" size="2em"  onChange={this.handleChange} />
             <InputT1 name="telefono" placeholder="phone number" size="2em" onChange={this.handleChange}/>
-            <InputP1 name="Password" placeholder="Password" size="2em" onChange={this.handleChange} />
+            <InputP1 name="password" placeholder="Password" size="2em" onChange={this.handleChange} />
          </form>
          <Log>
-            <NavLink to="/home" type="submit">
-                           <td><img src={Create} alt=""/></td>
-            </NavLink>
+            <button onClick={() => this.registrer()}><td><img src={Create} alt="" /></td></button> 
          </Log>
          </React.StrictMode>
       </div>

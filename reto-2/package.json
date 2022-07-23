@@ -1,5 +1,5 @@
 {
-  "name": "reto-1",
+  "name": "reto-2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +17,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "npm run watch:css && react-scripts start && json-server --watch ./src/data/data.json --port 4008",
+    "start": "npm run watch:css && react-scripts start && json-server --watch ./src/data/data.json --port 40082",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

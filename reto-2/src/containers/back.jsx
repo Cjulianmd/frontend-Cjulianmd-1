@@ -6,9 +6,9 @@ import Tap1 from '../components/NavBar'
 import axios from 'axios'
 import Cookies from 'universal-cookie';
 
-const baseUrl = 'http://localhost:4008/usuarios';
+const baseUrl = 'http://localhost:40082/usuarios';
 const cookies = new Cookies ();
-
+//https://app.getpostman.com/join-team?invite_code=950e74ddfd453ab2408546f1b16676ec
 class back extends Component {
    state = {
       form: {
@@ -25,7 +25,7 @@ class back extends Component {
       })
       
    }
-   
+  
    iniciarsesion = async () =>{console.log(this.state.form.telefono,this.state.form.password)
        await axios.get(baseUrl , {params: {telefono:this.state.form.telefono,password: this.state.form.password,}})
          
@@ -49,7 +49,7 @@ class back extends Component {
 
          })
    }
-  // componentDidMount(){if(cookies.get('nombre')){window.location.href="./home";} }
+//componentDidMount(){if(cookies.get('nombre')){window.location.href="./home";} }
   render() {
     return (
       <div>

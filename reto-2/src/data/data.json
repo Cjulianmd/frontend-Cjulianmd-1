@@ -1,6 +1,17 @@
 {
-    "usuarios": [
-        
-       
-    ]
+  "usuarios": [
+    {
+      "telefono": "310",
+      "nombre": "juan",
+      "email": "jjds@ads",
+      "password": "12345"
+    },
+    {
+      "nombre": "hally",
+      "email": "tryrf@vhg",
+      "telefono": "317",
+      "password": "12345",
+      "id": "12345"
+    }
+  ]
 }
