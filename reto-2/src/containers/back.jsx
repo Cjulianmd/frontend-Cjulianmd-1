@@ -6,7 +6,7 @@ import Tap1 from '../components/NavBar'
 import axios from 'axios'
 import Cookies from 'universal-cookie';
 
-const baseUrl = 'http://localhost:40082/usuarios';
+const baseUrl = 'https://sprint-2-1.herokuapp.com/usuarios/';
 const cookies = new Cookies ();
 //https://app.getpostman.com/join-team?invite_code=950e74ddfd453ab2408546f1b16676ec
 class back extends Component {
