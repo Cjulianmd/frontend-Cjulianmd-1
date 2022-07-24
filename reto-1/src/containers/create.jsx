@@ -4,7 +4,7 @@ import Create from '../assets/img/create.svg';
 import Tap1 from '../components/NavBar'
 import axios from 'axios'
 
-const baseUrl = 'http://localhost:4008/usuarios/';
+const baseUrl = 'https://sprint-2-1.herokuapp.com/user';
 class create extends Component {
 
    state = {

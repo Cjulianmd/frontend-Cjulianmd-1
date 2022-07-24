@@ -379,11 +379,16 @@ export const InputT1 = styled.input.attrs(({
   `
   export const Re3 = styled.div`
     position: absolute;
-        width: 390px;
-        height: 56px;
-        left: 0px;
-        top: 788px;
-  
+    width: 432px;
+    height: 56px;
+    left: 0px;
+    top: 877px;
+
+
+    background: #FFFFFF;
+    box-shadow: 0px -4px 38px rgba(0, 0, 0, 0.02);
+    border-radius: 20px 20px 0px 0px;
+    
 
   `
 
@@ -647,4 +652,39 @@ export const Fle = styled.div`
 
     /* Dark color */
 
+`
+export const Apbari = styled.div`
+  position: absolute;
+  left: 5.9%;
+  right: 88.46%;
+  top: 20.26%;
+  bottom: 2.01%;
+  
+`
+
+export const Apbari2 = styled.div`
+  position: absolute;
+  left: 33.33%;
+  right: 61.54%;
+  top: 20.26%;
+  bottom: 1.9%;
+  
+`
+export const Apbari3 = styled.div`
+  position: absolute;
+  left: 60.51%;
+  right: 33.33%;
+  top: 20.26%;
+  bottom: 1.9%;
+
+  
+`
+export const Apbari4 = styled.div`
+  
+  position: absolute;
+  left: 88.72%;
+  right: 5.9%;
+  top: 20.26%;
+  bottom: 1.9%;
+  
 `
