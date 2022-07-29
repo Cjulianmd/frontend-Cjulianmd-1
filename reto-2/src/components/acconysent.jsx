@@ -18,7 +18,7 @@ export default class acconysent extends Component {
         cookies.remove('email', {path:"/Singin"});
         cookies.remove('telefono', {path:"/Singin"});
         window.location.href="./Singin";
-        console.log(cookies.get('nombre'), "cerraste secion")
+        console.log(cookies.get('nombre'), "cerraste seci")
     }
     componentDidMount(){if(!cookies.get('nombre')){window.location.href="../Singin";} }
   render() {
