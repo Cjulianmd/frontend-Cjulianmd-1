@@ -23,9 +23,9 @@ export default class acconysent extends Component {
     componentDidMount(){if(!cookies.get('nombre')){window.location.href="../Singin";} }
   render() {
     
-    let nombre = cookies.get('nombr'); 
-    let email = cookies.get('emai');
-    let telefono = cookies.get('telefon');
+    let nombre = cookies.get('nombre'); 
+    let email = cookies.get('email');
+    let telefono = cookies.get('telefono');
     return (
       <div>
         <NavLink to='/pagina-perfil'><Back><img src={r5} alt=""/></Back></NavLink>
