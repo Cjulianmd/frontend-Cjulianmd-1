@@ -365,16 +365,42 @@ export const InputT1 = styled.input.attrs(({
     position: absolute;
         width: 417px;
         height: 266px;
-        left: 15px;
+        left: 50px;
         top: 166px;
 
   `
-  export const Re2 = styled.div`
+  export const Re6 = styled.div`
   position: absolute;
-    width: 359px;
-    height: 293px;
+      width: 417px;
+      height: 266px;
+      left: 15px;
+      top: 166px;
+
+`
+  export const Re2 = styled.div`
+  position: relative;
+    width: 400px;
+    top: 210px;
+
+  `
+  export const Re7 = styled.div`
+  /* Exit */
+
+
+    position: absolute;
+    width: 107px;
+    height: 44px;
+    left: 142px;
+    top: 712px;
+
+
+  `
+  export const Re5 = styled.div`
+  position: absolute;
+    width: 417px;
+    height: 266px;
     left: 15px;
-    top: 464px;
+    top: 458px;
 
   `
   export const Re3 = styled.div`
@@ -382,7 +408,7 @@ export const InputT1 = styled.input.attrs(({
     width: 432px;
     height: 56px;
     left: 0px;
-    top: 877px;
+    top: 850px;
 
 
     background: #FFFFFF;
@@ -687,4 +713,403 @@ export const Apbari4 = styled.div`
   top: 20.26%;
   bottom: 1.9%;
   
+`
+
+export const Textacon = styled.div`
+
+/* Robert Fox */
+
+
+position: absolute;
+left: 1.49%;
+right: 61.79%;
+top: 30.74%;
+bottom: 84.24%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+
+/* Dark color */
+
+color: #4B4B4B;
+
+
+
+`
+export const Textacon1 = styled.div`
+
+/* Account settings */
+
+
+position: absolute;
+left: 36.15%;
+right: 36.15%;
+top: 6.28%;
+bottom: 91.71%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+letter-spacing: -0.3px;
+
+/* Dark color */
+
+color: #4B4B4B;
+
+
+
+`
+export const Back = styled.div`
+
+/* Back */
+
+position: absolute;
+left: 8.21%;
+right: 87.69%;
+top: 6.28%;
+bottom: 92.89%;
+
+/* Dark color */
+
+`
+
+
+export const Video = styled.div`
+
+/* Video */
+
+border-radius: 50px;
+position: absolute;
+width: 358px;
+height: 200px;
+left: 16px;
+top: 92px;
+
+`
+export const Preguntas = styled.div`
+
+position: relative;
+width: 358px;
+left: 16px;
+top: 374px;
+
+`
+export const Bpre1 = styled.div`
+/* Rectangle 82 */
+
+
+position: absolute;
+left: 8.21%;
+right: 82.56%;
+
+
+/* Main color (gradient) */
+
+background: #C8C8C8;
+border-radius: 10px;
+
+`
+export const Bpre2 = styled.div`
+align-items: center;
+position: absolute;
+left: 8.21%;
+right: 82.56%;
+
+
+/* Gray color */
+
+background: #C8C8C8;
+border-radius: 10px;
+
+`
+export const Bpre3 = styled.div`
+position: absolute;
+left: 8.21%;
+right: 82.56%;
+
+
+/* Gray color */
+
+background: #C8C8C8;
+border-radius: 10px;
+
+`
+export const Bpre4 = styled.div`
+/* Rectangle 82 */
+
+
+position: absolute;
+left: 8.21%;
+right: 82.56%;
+
+
+/* Gray color */
+
+background: #C8C8C8;
+border-radius: 10px;
+
+`
+
+export const Btpre = styled.div`
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+letter-spacing: -0.3px;
+
+/* BG color */
+
+color: #FCFDFF;
+
+`
+export const BtpreN = styled.div`
+position: absolute;
+left: 46.15%;
+right: 45.9%;
+top: 30.22%;
+bottom: 30.77%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: -0.3px;
+
+/* Dark color */
+
+color: #4B4B4B;
+
+`
+export const BtNext = styled.div`
+
+/* Rectangle 1 */
+
+
+position: absolute;
+left: 4.1%;
+right: 4.1%;
+top: 87.68%;
+bottom: 7.11%;
+
+/* Main color (gradient) */
+
+background: linear-gradient(92.67deg, #BFC3FC 0.11%, #A2C3FC 100%);
+border-radius: 15px;
+`
+
+export const BoxPre = styled.div`
+
+position: absolute;
+width: 358px;
+height: 64px;
+left: 16px;
+top: 448px;
+`
+
+export const BoxPre2 = styled.div`
+
+position: absolute;
+width: 358px;
+height: 64px;
+left: 16px;
+top: 522px;
+
+`
+export const BoxPre3 = styled.div`
+
+position: absolute;
+width: 358px;
+height: 64px;
+left: 16px;
+top: 596px;
+`
+export const BoxPre4 = styled.div`
+
+position: absolute;
+width: 358px;
+height: 64px;
+left: 16px;
+top: 670px;
+`
+
+export const BoxPreT = styled.div`
+
+position: absolute;
+left: 20%;
+right: 7.69%;
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+letter-spacing: -0.3px;
+
+/* Dark color */
+
+color: #4B4B4B;
+`
+
+export const BoxP = styled.div`
+
+position: absolute;
+left: 4.1%;
+right: 12.05%;
+top: 33.9%;
+bottom: 57.23%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: -0.3px;
+
+/* Dark color */
+
+color: #4B4B4B;
+
+`
+export const Starts = styled.div`
+
+position: absolute;
+width: 178px;
+height: 58px;
+left: 107px;
+top: 292px;
+
+`
+
+export const Congratulations = styled.div`
+
+/* Congratulations */
+
+
+position: absolute;
+width: 186px;
+height: 29px;
+left: 102px;
+top: 382px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: -0.3px;
+
+/* Dark color */
+
+color: #4B4B4B;
+
+`
+
+export const T1 = styled.div`
+
+/* You have completed the test */
+
+
+position: absolute;
+width: 182px;
+height: 17px;
+left: 105px;
+top: 411px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: -0.3px;
+
+/* Dark color */
+
+color: #4B4B4B;
+
+`
+export const T2 = styled.div`
+
+/* 14 correct answers */
+
+
+position: absolute;
+width: 119px;
+height: 17px;
+left: 136px;
+top: 442px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: -0.3px;
+
+/* Dark color */
+
+color: #4B4B4B;
+
+`
+export const C2 = styled.div`
+
+/* Coins */
+position: absolute;
+left: 43.08%;
+right: 44.62%;
+top: 56.64%;
+bottom: 40.52%;
+`
+export const TC2 = styled.div`
+
+/* 14 */
+
+
+position: absolute;
+left: 51.28%;
+right: 44.62%;
+top: 10.99%;
+bottom: 41%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+
+/* Dark color */
+
+color: #4B4B4B;
+
 `

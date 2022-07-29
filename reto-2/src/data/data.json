@@ -11,7 +11,16 @@
       "email": "tryrf@vhg",
       "telefono": "317",
       "password": "12345",
+      "coins": "15",
       "id": "12345"
+    },
+    {
+      "coins": "2",
+      "id": "142"
+    },
+    {
+      "coins": "3",
+      "id": "123"
     }
   ]
 }

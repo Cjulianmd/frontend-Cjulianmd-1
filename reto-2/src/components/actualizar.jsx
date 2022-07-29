@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
-import { TextC, TitleC, InputT1, InputP1, Log, InputN, InputE} from '../style/StyleGlobal';
-import Create from '../assets/img/create.svg';
+import { TextC, TitleC, InputT1, InputP1, Log, InputN, InputE, BtNext, BtpreN, Textacon1} from '../style/StyleGlobal';
 import Tap1 from '../components/NavBar'
 import axios from 'axios'
+import Cookies from 'universal-cookie';
+import { Back } from './../style/StyleGlobal';
+import {NavLink} from 'react-router-dom'
+import r5 from '../assets/img/flecha.svg'
+const cookies = new Cookies ();
 
-const baseUrl = 'https://sprint-2-1.herokuapp.com/usuarios';
-class create extends Component {
-
+const baseUrl = 'https://sprint-2-1.herokuapp.com/usuarios/';
+class actualizar extends Component {
+    
    state = {
       form: {
          nombre:'',
@@ -17,19 +21,22 @@ class create extends Component {
       }
    }
 
-   registrer = () =>{
-     console.log("creaste una cuenta");
-     alert("creaste una cuenta")
+   actualizar = () =>{
     
-      axios.post(baseUrl ,{
+    let nombre = cookies.get('nombre'); 
+    let email = cookies.get('email');
+    let telefono = cookies.get('telefono');
+    let coi = cookies.get('coins');
+    let password = cookies.get('password'); 
+    
+      axios.put(baseUrl+password ,{
          nombre:this.state.form.nombre,
          email:this.state.form.email,
          telefono:this.state.form.telefono,
-         password: this.state.form.password,
-         id: this.state.form.password ,
-         coins:"0"
-      }
-         ) 
+         password: password,
+         coins: coi
+      }) 
+    
         .catch(error =>{
          if (error.response) {
             console.log(error.response.data);
@@ -42,7 +49,20 @@ class create extends Component {
           }
           console.log(error.config);
         });
-   window.location.href="./Singin"
+        cookies.set('nombr', nombre, {phat: "/"});
+        cookies.set('emai', email, {phat: "/"});
+        cookies.set('telefon', telefono, {phat: "/"});
+   //window.location.href="./Singin" 
+   console.log(this.state.form.nombre)
+   if(this.state.form.nombre = 'null'){
+    this.state.form.nombre = nombre
+    }
+    if(this.state.form.email = 'null'){
+    this.state.form.email = email
+    }
+    if(this.state.form.telefono = 'null'){
+    this.state.form.telefono = telefono
+    }
    }
   
    handleChange  = async evt => {
@@ -58,15 +78,18 @@ class create extends Component {
    
 
   render() {
+        
     return (
-      <div>
+      <div><Tap1/>
          <React.StrictMode>
-         <Tap1/>
+          <NavLink to='/Account-settings'><Back><img src={r5} alt=""/></Back></NavLink>
+        <Textacon1>actualizar</Textacon1>
+         
          <TitleC>
-            Create new Account
+            actualizar datos
          </TitleC>
          <TextC>
-         Create a new account by filling in all the fields or log in to an existing account
+         aqui puedes actualizar tus datos
          </TextC>
          <form onSubmit={event => {
             event.preventDefault()
@@ -76,14 +99,12 @@ class create extends Component {
             <InputN  name="nombre" placeholder="nombre" size="2em" onChange={this.handleChange} />
             <InputE name="email" placeholder="email" size="2em"  onChange={this.handleChange} />
             <InputT1 name="telefono" placeholder="phone number" size="2em" onChange={this.handleChange}/>
-            <InputP1 name="password" placeholder="Password" size="2em" onChange={this.handleChange} />
          </form>
-         <Log>
-            <button onClick={() => this.registrer()}><td><img src={Create} alt="" /></td></button> 
-         </Log>
+           <BtNext onClick={() => this.actualizar()}><center><BtpreN>save</BtpreN></center></BtNext>
+         
          </React.StrictMode>
       </div>
     )
   }
 }
-export default create;
+export default actualizar;

@@ -8,13 +8,14 @@ import Cookies from 'universal-cookie';
 const cookies = new Cookies ();
 export default class rectangulo extends Component {
   render() {
-
+    let coins = cookies.get('coins');
+    let coi = cookies.get('coi');
     let nombre = cookies.get('nombre'); 
     return (
       <div>
         
         <Reta>
-            <Coin><td><img src={c} alt=""/></td></Coin><CoinN>400</CoinN>
+            <Coin><td><img src={c} alt=""/></td></Coin><CoinN>{coins}</CoinN>
                 <Noti><td><img src={h} alt=""/></td></Noti>
                 <Tap1/>
                     <TitleH>

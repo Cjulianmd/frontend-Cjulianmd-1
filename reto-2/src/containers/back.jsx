@@ -30,13 +30,17 @@ class back extends Component {
        await axios.get(baseUrl , {params: {telefono:this.state.form.telefono,password: this.state.form.password,}})
          
          .then(response =>{
+            console.log(response.data.id)
             return response.data;
          })
          .then(response=>{
             if(response.length>0){
                let respuesta = response[0];
-               cookies.set('telefono', respuesta.telefono, {phat: "/"});
                cookies.set('nombre', respuesta.nombre, {phat: "/"});
+               cookies.set('email', respuesta.email, {phat: "/"});
+               cookies.set('telefono', respuesta.telefono, {phat: "/"});
+               cookies.set('coins', respuesta.coins, {phat: "/"});
+               cookies.set('password', respuesta.password, {phat: "/"});
                window.location.href="./home";
 
             }else{
