@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react"
+import React, {  useState } from "react"
 import axios from 'axios'
 import Cookies from 'universal-cookie';
 import Reactplayer from 'react-player'
-import {  Re7, Re2, Video, Textacon1, Back,Preguntas, Bpre2, Btpre, Bpre3, Bpre1, BtNext, BtpreN, BoxPre4, BoxPre2, BoxP } from '../style/StyleGlobal'
+import { Video, Textacon1, Back, Bpre2, Btpre, Bpre3, Bpre1, BtNext, BtpreN, BoxPre4, BoxPre2, BoxP } from '../style/StyleGlobal'
 import {NavLink} from 'react-router-dom'
 import r5 from '../assets/img/flecha.svg'
 import { Bpre4, BoxPre, BoxPre3, BoxPreT } from './../style/StyleGlobal';
@@ -54,13 +54,11 @@ const [counter, setCounter] = useState(1);
          console.log(error)
       });
 
-	
-  let id = cookies.get('id-t');
   let video = cookies.get('video'); 
   let descripcion = cookies.get('descripcion');
   let pregunta = cookies.get('pregunta'); 
   let opciones = cookies.get('opciones');
-  let img = cookies.get('img'); 
+
 
   const [puntuacion, setPuntuacion] = useState(0);
 
@@ -72,9 +70,6 @@ const [counter, setCounter] = useState(1);
       alert("correcta")
     }
     console.log(isCorrect)
-  
-     
-  
   }
   cookies.set('puntuacion', puntuacion, {phat: "/"});
 	return (

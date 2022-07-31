@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { TextC, TitleC, InputT1, InputP1, Log, InputN, InputE, BtNext, BtpreN, Textacon1} from '../style/StyleGlobal';
+import { TextC, TitleC, InputT1,  InputN, InputE, BtNext, BtpreN, Textacon1} from '../style/StyleGlobal';
 import Tap1 from '../components/NavBar'
 import axios from 'axios'
 import Cookies from 'universal-cookie';
@@ -20,6 +20,7 @@ class actualizar extends Component {
          id:''
       }
    }
+   
 
    actualizar = () =>{
     
@@ -28,7 +29,7 @@ class actualizar extends Component {
     let telefono = cookies.get('telefono');
     let coi = cookies.get('coins');
     let password = cookies.get('password'); 
-    
+        
       axios.put(baseUrl+password ,{
          nombre:this.state.form.nombre,
          email:this.state.form.email,
@@ -49,9 +50,6 @@ class actualizar extends Component {
           }
           console.log(error.config);
         });
-        cookies.set('nombr', nombre, {phat: "/"});
-        cookies.set('emai', email, {phat: "/"});
-        cookies.set('telefon', telefono, {phat: "/"});
    //window.location.href="./Singin" 
    console.log(this.state.form.nombre)
    if(this.state.form.nombre = 'null'){

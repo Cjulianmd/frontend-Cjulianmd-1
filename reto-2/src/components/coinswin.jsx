@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect} from 'react';
 import Cookies from 'universal-cookie';
 import r1 from '../assets/img/Stars.svg'
 import r2 from '../assets/img/coin.svg'
@@ -9,16 +9,31 @@ import { T1, C2, Back } from './../style/StyleGlobal';
 import axios from 'axios'
 const cookies = new Cookies ();
 const baseUrl = 'https://sprint-2-1.herokuapp.com/usuarios/';
-export default function coinswin(){ 
-    let nombre = cookies.get('nombre'); 
-    let email = cookies.get('email');
-    let telefono = cookies.get('telefono');
-    let coins = cookies.get('coins');
-    let password = cookies.get('password'); 
-    let point = cookies.get('puntuacion');//
-    let coin = coins+ point
+export default function Coinswin(){ 
+            let id = cookies.get('id'); 
+            let point = cookies.get('puntuacion')
+        const url = 'https://sprint-2-1.herokuapp.com/usuarios/';
+        const [data, setData] = useState([]);
+
+
+        const getUsers = async() =>{
+            await axios.get(url + id)
+            .then(response => {
+                setData(response.data)
+                console.log(data)
+            })
+        }
+        useEffect( ()=>{
+            getUsers()
+            
+        },[])
+        const nombre = data.nombre
+        const coins = data.coins
+        const email = data.email
+        const telefono = data.telefono
+        const password = data.password
     function coipu(){
-        
+        ; 
         window.location.href="./test";
         axios.put(baseUrl+password, {
             nombre:nombre,
@@ -36,7 +51,6 @@ export default function coinswin(){
         .catch(error =>{
             console.log(error)
         })}
-    cookies.set('coins', point, {phat: "/"});
     return (
         
       <div>

@@ -41,6 +41,7 @@ class back extends Component {
                cookies.set('telefono', respuesta.telefono, {phat: "/"});
                cookies.set('coins', respuesta.coins, {phat: "/"});
                cookies.set('password', respuesta.password, {phat: "/"});
+               cookies.set('id', respuesta.id, {phat: "/"});
                window.location.href="./home";
 
             }else{
