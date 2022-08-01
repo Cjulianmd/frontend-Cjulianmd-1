@@ -31,8 +31,8 @@ export default function Rectangulo(){
   return (
     <div>
       <Reta>
-      <NavLink to='/Coin'><Coin><td><img src={c} alt=""/></td></Coin><CoinN>{coins}</CoinN>
-              <Noti><td><img src={h} alt=""/></td></Noti></NavLink>
+      <NavLink to='/Coin'><Coin><td><img src={c} alt=""/></td></Coin><CoinN>{coins}</CoinN></NavLink>
+              <Noti><td><img src={h} alt=""/></td></Noti>
               <Tap1/> 
                   <TitleH>
                       Hi,{nombre} 

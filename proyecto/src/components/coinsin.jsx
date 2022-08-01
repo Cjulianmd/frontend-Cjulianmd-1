@@ -33,12 +33,12 @@ export default function Postres() {
 	return (
 		<div >
         <Reta>
-      <NavLink to='/Coin'><Coin1><td><img src={c} alt=""/></td></Coin1></NavLink><CoinN1>{coins}</CoinN1>
+      <NavLink to='/Coin'><Coin1><img src={c} alt=""/></Coin1></NavLink><CoinN1>{coins}</CoinN1>
        <NavLink to='/home'><Back><img src={r5} alt=""/></Back></NavLink>
        <Textacon1>Сurrent balance</Textacon1>
        </Reta>
-       <NavLink to='/compracoi'><Re12><td><img src={r2} alt=""/></td></Re12>
-       <img src={r1} alt=""/></NavLink>
+       <Re12><img src={r2} alt=""/></Re12>
+       <NavLink to='/compracoi'><img src={r1} alt=""/></NavLink>
     </div>
 
 	)
