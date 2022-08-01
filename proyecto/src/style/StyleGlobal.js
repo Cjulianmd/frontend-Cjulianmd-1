@@ -1113,3 +1113,112 @@ text-align: center;
 color: #4B4B4B;
 
 `
+
+
+
+export const Boxcou = styled.div`
+
+/* Lesson */
+
+
+position: absolute;
+width: 358px;
+height: 440px;
+left: 16px;
+top: 190px;
+
+`
+export const Rectangle60 = styled.div`
+
+/* Rectangle 60 */
+
+
+position: relative;
+left: 4.1%;
+right: 4.1%;
+top: 45.5%;
+bottom: 49.29%;
+margin-top: 5px;
+padding: 15px 0;
+  
+/* Main color (gradient) */
+
+background: linear-gradient(92.67deg, #BFC3FC 0.11%, #A2C3FC 100%);
+opacity: 0.5;
+border-radius: 15px;
+`
+
+export const Btpre1 = styled.div`
+/* Language rules */
+left: 16px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* Dark color */
+
+color: #4B4B4B;
+
+`
+
+export const Coin1 = styled.div`
+
+position: absolute;
+left: 43.08%;
+right: 50.77%;
+top: 50.09%;
+bottom: 85.07%;
+
+
+`
+export const CoinN1 = styled.div`
+
+/* 400 */
+
+
+position: absolute;
+left: 45.74%;
+right: 43.08%;
+top: 52.09%;
+bottom: 85.55%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+
+/* Dark color */
+
+color: #4B4B4B;
+
+`
+export const Re12 = styled.div`
+
+/* Unlock premium */
+
+
+position: absolute;
+width: 358px;
+height: 100px;
+left: 16px;
+top: 182px;
+
+
+`
+export const Boxcou1 = styled.div`
+
+/* Lesson */
+
+
+position: absolute;
+width: 358px;
+height: 440px;
+left: 16px;
+top: 10px;
+
+`

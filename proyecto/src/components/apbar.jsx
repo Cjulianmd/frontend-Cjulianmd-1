@@ -12,7 +12,7 @@ export default class apbar extends Component {
         <Re3>
         <NavLink to="/Home"><Apbari ><img  src={Home} alt=""/></Apbari></NavLink>
         <NavLink to="/test"><Apbari2> <img src={Test} alt=""/></Apbari2></NavLink>
-        <Apbari3> <img src={estadistica} alt=""/></Apbari3>
+        <NavLink to="/estadistica"><Apbari3> <img src={estadistica} alt=""/></Apbari3></NavLink>
         <NavLink to="/pagina-perfil"><Apbari4><img src={Profile} alt=""/></Apbari4></NavLink>
         </Re3>
       </div>

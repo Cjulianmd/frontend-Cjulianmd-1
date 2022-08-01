@@ -15,6 +15,11 @@ import Pag3 from '../containers/Pag3'
 import Registrer from '../containers/create'
 import Home from '../containers/home'
 import Very from '../containers/veryfication' 
+import Elementari from '../components/elementari'
+import Curso from '../components/curso'
+import Coin from '../components/coinsin'
+import Compracoi from '../components/compracoi'
+import Estadistica from '../components/estadisticas'
 class AppRoutes extends Component {
     render() {
         return (
@@ -35,6 +40,11 @@ class AppRoutes extends Component {
                     <Route path="/preguntas" element={<Preguntas/>}/>
                     <Route path="/win" element={<Winc/>}/>
                     <Route path="/Actualizardatos" element={<S/>}/>
+                    <Route path="/ele" element={<Elementari/>}/>
+                    <Route path="/curso" element={<Curso/>}/>
+                    <Route path="/Coin" element={<Coin/>}/>
+                    <Route path="/compracoi" element={<Compracoi/>}/>
+                    <Route path="/estadistica" element={<Estadistica/>}/>
                     
                 
                 </Routes>

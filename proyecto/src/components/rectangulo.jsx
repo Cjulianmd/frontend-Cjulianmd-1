@@ -5,6 +5,7 @@ import h from '../assets/img/Notificacion.svg'
 import {Reta, TitleH, TextH, Coin, Noti, CoinN} from '../style/StyleGlobal'
 import Cookies from 'universal-cookie';
 import axios from 'axios'
+import {NavLink} from 'react-router-dom'
 const cookies = new Cookies ();
 export default function Rectangulo(){
   
@@ -30,8 +31,8 @@ export default function Rectangulo(){
   return (
     <div>
       <Reta>
-          <Coin><td><img src={c} alt=""/></td></Coin><CoinN>{coins}</CoinN>
-              <Noti><td><img src={h} alt=""/></td></Noti>
+      <NavLink to='/Coin'><Coin><td><img src={c} alt=""/></td></Coin><CoinN>{coins}</CoinN>
+              <Noti><td><img src={h} alt=""/></td></Noti></NavLink>
               <Tap1/> 
                   <TitleH>
                       Hi,{nombre} 
