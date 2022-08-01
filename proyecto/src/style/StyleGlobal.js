@@ -188,7 +188,7 @@ export const InputT = styled.input.attrs(({
     border-radius: 15px;
   `;
   export const InputP = styled.input.attrs(props => ({
-    type: "text"
+    type: "password"
   }))`
   box-sizing: border-box;
   padding: 10px;
@@ -349,7 +349,7 @@ export const InputT1 = styled.input.attrs(({
   `;
 
   export const InputP1 = styled.input.attrs(props => ({
-    type: "text"
+    type: "password"
   }))`
   box-sizing: border-box;
   padding: 10px;
@@ -1219,6 +1219,103 @@ position: absolute;
 width: 358px;
 height: 440px;
 left: 16px;
-top: 10px;
+top: 8%;
 
+`
+export const Boxcou2 = styled.div`
+
+/* Lesson */
+
+position: absolute;
+width: 358px;
+height: 440px;
+left: 16px;
+top: 100px;
+
+`
+export const Btpre2 = styled.div`
+/* Language rules */
+left: 16px;
+display: flex;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* Dark color */
+
+color: #4B4B4B;
+
+`
+
+export const Input1 = styled.input.attrs(({
+  type: "text"
+}))`
+box-sizing: border-box;
+border-radius:15px;
+position: absolute;
+left: 4.1%;
+right: 4.1%;
+top: 12.09%;
+bottom: 82.7%;
+
+`
+export const Input2 = styled.input.attrs(({
+  type: "number"
+}))`
+box-sizing: border-box;
+border-radius:15px;
+
+position: absolute;
+left: 4.1%;
+right: 4.1%;
+top: 18.48%;
+bottom: 76.3%;
+
+`
+export const Input3 = styled.input.attrs(({
+  type: "date" 
+}))`
+box-sizing: border-box;
+border-radius:15px;
+
+position: absolute;
+left: 4.1%;
+right: 52.82%;
+top: 24.88%;
+bottom: 69.91%;
+
+`
+export const Input4 = styled.input.attrs(({
+  type: "password"
+}))`
+box-sizing: border-box;
+border-radius:15px;
+background-color: Gray color;
+color: Gray color;
+position: absolute;
+left: 52.82%;
+right: 4.1%;
+top: 24.88%;
+bottom: 69.91%;
+
+`
+export const Rectangle61 = styled.div`
+
+/* Rectangle 60 */
+
+
+position: relative;
+left: 4.1%;
+right: 4.1%;
+top: 10.5%;
+bottom: 49.29%;
+margin-top: 5px;
+padding: 15px 0;
+  
+/* Main color (gradient) */
+
+background: linear-gradient(92.67deg, #BFC3FC 0.11%, #A2C3FC 100%);
+opacity: 0.5;
+border-radius: 15px;
 `

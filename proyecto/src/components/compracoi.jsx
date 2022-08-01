@@ -14,6 +14,7 @@ export default function Coinswin(){
             let id = cookies.get('id'); 
             let point = cookies.get('puntuacion')
         const url = 'https://sprint-2-1.herokuapp.com/usuarios/';
+        const URL2 = 'http://localhost:4008/trasation/';
         const [data, setData] = useState([]);
 
 
@@ -33,9 +34,8 @@ export default function Coinswin(){
         const email = data.email
         const telefono = data.telefono
         const password = data.password
+        
     function coipu(){
-        ; 
-        window.location.href="./test";
         axios.put(baseUrl+password, {
             nombre:nombre,
             email:email,
@@ -44,7 +44,11 @@ export default function Coinswin(){
             id: password,
             coins: counter
             })
-        
+        axios.post(URL2,{
+        coins:counter,
+        id: '' ,
+     }
+        )
             
         .then(response =>{
             console.log(response);

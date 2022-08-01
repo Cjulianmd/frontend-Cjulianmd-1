@@ -20,6 +20,9 @@ import Curso from '../components/curso'
 import Coin from '../components/coinsin'
 import Compracoi from '../components/compracoi'
 import Estadistica from '../components/estadisticas'
+import Transation from '../components/transation'
+import Walled from '../components/walled'
+import Addwalled from '../components/addwalled'
 class AppRoutes extends Component {
     render() {
         return (
@@ -45,6 +48,9 @@ class AppRoutes extends Component {
                     <Route path="/Coin" element={<Coin/>}/>
                     <Route path="/compracoi" element={<Compracoi/>}/>
                     <Route path="/estadistica" element={<Estadistica/>}/>
+                    <Route path="/transation" element={<Transation/>}/>
+                    <Route path="/walled" element={<Walled/>}/>
+                    <Route path="/addwalled" element={<Addwalled/>}/>
                     
                 
                 </Routes>

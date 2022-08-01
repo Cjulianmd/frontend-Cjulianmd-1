@@ -9,6 +9,7 @@ import { T1, C2, Back } from './../style/StyleGlobal';
 import axios from 'axios'
 const cookies = new Cookies ();
 const baseUrl = 'https://sprint-2-1.herokuapp.com/usuarios/';
+const URL2 = 'http://localhost:4008/trasation/';
 export default function Coinswin(){ 
             let id = cookies.get('id'); 
             let point = cookies.get('puntuacion')
@@ -33,8 +34,7 @@ export default function Coinswin(){
         const telefono = data.telefono
         const password = data.password
     function coipu(){
-        ; 
-        window.location.href="./test";
+        
         axios.put(baseUrl+password, {
             nombre:nombre,
             email:email,
@@ -43,6 +43,10 @@ export default function Coinswin(){
             id: password,
             coins: point
             })
+            axios.post(URL2,{
+                coins:point,
+                id: '' ,
+             })
             
         .then(response =>{
             console.log(response);
@@ -50,7 +54,8 @@ export default function Coinswin(){
         })
         .catch(error =>{
             console.log(error)
-        })}
+        })
+        window.location.href="./test";}
     return (
         
       <div>

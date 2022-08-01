@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import { TextC, TitleC, InputT1, InputP1, Log, InputN, InputE} from '../style/StyleGlobal';
+import { TextC, TitleC, InputT1, InputP1, Log, InputN, InputE, BtNext} from '../style/StyleGlobal';
 import Create from '../assets/img/create.svg';
 import Tap1 from '../components/NavBar'
 import axios from 'axios'
+import { BtpreN } from './../style/StyleGlobal';
 
-const baseUrl = 'https://sprint-2-1.herokuapp.com/usuarios';
+const baseUrl = 'https://sprint-2-1.herokuapp.com/usuarios/';
 class create extends Component {
 
    state = {
@@ -78,9 +79,7 @@ class create extends Component {
             <InputT1 name="telefono" placeholder="phone number" size="2em" onChange={this.handleChange}/>
             <InputP1 name="password" placeholder="Password" size="2em" onChange={this.handleChange} />
          </form>
-         <Log>
-            <button onClick={() => this.registrer()}><td><img src={Create} alt="" /></td></button> 
-         </Log>
+         <BtNext onClick={() => this.registrer()}><center><BtpreN>create</BtpreN></center></BtNext>
          </React.StrictMode>
       </div>
     )
